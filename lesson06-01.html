@@ -57,7 +57,7 @@
           if(event.target.tagName === 'BUTTON') {
             var $span = event.target.previousSibling;
 
-            basket.push({ name: $span.textContent }, { kilogram: $span.textContent });
+            basket.push({ name: $span.textContent, kilogram: 1 });
             buildList(basket);
           }
         } 
